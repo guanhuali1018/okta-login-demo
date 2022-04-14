@@ -46,11 +46,7 @@ const Home = () => {
 
         {!authState.isAuthenticated && (
           <div>
-            <p>
-              If you are seeing this message you are not authenticated to see
-              the protected pages. Please login in to authenticate your user
-              account and get access to profile
-            </p>
+            <p>You are not authenticated, please login!</p>
             <Button variant="contained" color="primary" onClick={login}>
               Login
             </Button>
