@@ -1,13 +1,19 @@
+# Intro
+
+After following some tutorials for integrating Okta to React app, I created this demo for playing/testing with features of Okta supplied.
+
+Feel free to use it and welcome any thoughts!
+
 # How to run this project?
 
-Create .env file in the root and fill it with OKTA application credentials:
+1. Create .env file in the root and fill it with OKTA application credentials:
 
-`cp .env.example .env`
+   `cp .env.example .env`
 
-Install all the dependencies:
+2. Install all the dependencies:
 
-`npm ci`
+   `npm ci`
 
-Run project:
+3. Run project:
 
-`npm run`
+   `npm run`
