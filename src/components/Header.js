@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppBar, Box, Toolbar, Button, Typography } from '@mui/material';
 import { useOktaAuth } from '@okta/okta-react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const Header = () => {
   const history = useHistory();
@@ -33,16 +33,23 @@ const Header = () => {
             CHRIS-OKTA-DEMO
           </Typography>
 
-          {authState.isAuthenticated && (
-            <Button
-              variant="contained"
-              color="primary"
-              style={{ marginRight: 20 }}
-              onClick={() => history.push('/profile')}
-            >
-              Profile Page
-            </Button>
-          )}
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ marginRight: 20 }}
+            onClick={() => history.push('/')}
+          >
+            Home Page
+          </Button>
+
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ marginRight: 20 }}
+            onClick={() => history.push('/profile')}
+          >
+            Profile Page
+          </Button>
 
           {authState.isAuthenticated && (
             <Button variant="contained" color="error" onClick={logout}>

@@ -30,10 +30,12 @@ function App() {
     >
       <Header />
       <Box sx={{ mt: 5 }}>
-        <Route path="/" exact component={Home} />
-        <Route path="/login" component={CustomLogin} />
-        <Route path="/login/callback" exact component={LoginCallback} />
-        <SecureRoute path="/profile" component={Profile} />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/login" component={CustomLogin} />
+          <Route path="/login/callback" exact component={LoginCallback} />
+          <SecureRoute path="/profile" component={Profile} />
+        </Switch>
       </Box>
     </Security>
   );
