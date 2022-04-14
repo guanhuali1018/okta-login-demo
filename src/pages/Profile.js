@@ -22,7 +22,7 @@ const Profile = () => {
           console.log(err);
         });
     }
-  }, [authState, userInfo, oktaAuth]);
+  }, [authState, userInfo, oktaAuth, history]);
 
   if (!userInfo) {
     return <div>Fetching user profile...</div>;

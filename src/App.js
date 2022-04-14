@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import CustomLogin from './pages/CustomLogin';
 import Profile from './pages/Profile';
 import Header from './components/Header';
-import { Box, Container } from '@mui/material';
+import { Box } from '@mui/material';
 
 const oktaAuth = new OktaAuth(oktaConfig.oidc);
 
