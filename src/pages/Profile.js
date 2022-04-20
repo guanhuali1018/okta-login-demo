@@ -22,7 +22,7 @@ const Profile = () => {
           console.log(err);
         });
     }
-  }, [authState, userInfo, oktaAuth, history]);
+  }, [authState, oktaAuth, history]);
 
   if (!userInfo) {
     return <div>Fetching user profile...</div>;
@@ -32,7 +32,8 @@ const Profile = () => {
     <Box>
       <Container>
         <h1>Profile Page</h1>
-        {userInfo.name}
+        {/* Welcome, {userInfo.name} */}
+        {console.log('userInfo from OKTA: ', userInfo)}
       </Container>
     </Box>
   );
