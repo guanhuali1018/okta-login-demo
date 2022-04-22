@@ -32,7 +32,6 @@ const Profile = () => {
     <Box>
       <Container>
         <h1>Profile Page</h1>
-        {/* Welcome, {userInfo.name} */}
         {console.log('userInfo from OKTA: ', userInfo)}
       </Container>
     </Box>

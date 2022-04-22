@@ -21,7 +21,7 @@ const Home = () => {
           console.log(err);
         });
     }
-  }, [authState, userInfo, oktaAuth]);
+  }, [authState, oktaAuth]);
 
   if (!authState) {
     return <div>Loading...</div>;
