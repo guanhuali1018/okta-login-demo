@@ -34,7 +34,9 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/login" component={CustomLogin} />
           <Route path="/login/callback" exact component={LoginCallback} />
-          <SecureRoute path="/profile" component={Profile} />
+          {/* SecureRoute is not a must */}
+          {/* <SecureRoute path="/profile" component={Profile} /> */}
+          <Route path="/profile" component={Profile} />
         </Switch>
       </Box>
     </Security>

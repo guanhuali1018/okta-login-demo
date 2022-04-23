@@ -23,7 +23,7 @@ const CustomLogin = () => {
       redirectUri,
       i18n: {
         en: {
-          'primaryauth.title': 'Sign in to React & Company',
+          'primaryauth.title': 'Sign in to POC Demo',
         },
       },
       authParams: {
